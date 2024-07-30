@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html, body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;  
+}
+
+.container{
+    display: grid;
+    grid-template: "topo" 100px
+                    "conteudo" 
+                    "rodape" 100px / 1fr;
+    min-height: 100%;
+}
+
+#topo{
+    grid-area: topo;
+    display: flex;
+    align-items: flex-end;
+    background-color: #7B7163;
+}
+#topo #logo{
+    height: 100%;
+}
+#logo img{
+    height: 100%;
+}
+#topo #menu{
+    padding: 1rem 15rem 2rem 30rem;
+}
+#menu a{
+    padding: 0rem;
+    text-decoration: underline;
+    color: #DCC7A9;
+}
+#topo #perfil{
+    /*margin-left: 5rem;*/
+}
+#conteudo{
+    grid-area: conteudo;
+    background-color: #DCC7A9;
+    padding-bottom: 2rem;
+}
+#conteudo h1{
+    text-align: center;
+    color: #585220;
+    padding: 1rem;
+}
+#conteudo a{
+    padding: 1rem;
+}
+#conteudo img{
+    padding-bottom: 2rem;
+}
+.image-conteudo{
+    position: relative;
+    display: inline-block;
+}
+.image-conteudo img{
+    display: block;
+}
+.text{
+    font-size: 1.3rem;
+    font-weight: 700;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFEACB;
+    padding: 10px;
+    border-radius: 5px;
+}
+#rodape{
+    grid-area: rodape;
+    background-color: #7B7163;
+    color: #DCC7A9;
+}
+#rodape p{
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 1rem;
+}

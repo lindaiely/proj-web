@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    font: 14px;
+    
+}
+.container{
+    background-color: rgba(220, 199, 169, 1);   
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    color: #AAA;
+    margin: auto;
+    background: linear-gradient(to bottom, #584F41, #312B23);
+    padding: 2rem 3rem;
+    max-width: 60rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.login .content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.login .content a{
+    text-decoration: none;
+    color: #fefefe;
+    font-size: 1rem;
+}
+
+.login h2{
+    font-size: 2rem;
+    color: #fefefe;
+    text-align: center;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.login .img{
+    margin-left: 20px;
+    flex: 1;
+}
+
+.login .img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.login input{
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    background-color: rgba(220, 199, 169, 1);
+    color: #fff;
+    padding: 1rem 2.1rem;
+    margin: 0.5rem 0 1.5rem;
+}
+
+#login, #senha, #email{
+    width: 100%;
+}
+
+.btn{
+    margin: 0.5rem 0 1.5rem;
+    padding: 1rem;
+    border: 2px solid rgba(220, 199, 169, 1);
+    outline: none;
+    color: #fff;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+.btn-danger{
+    background-color: #312B23;
+}
+.login footer{
+    margin: 0.5rem 0;
+    text-align: center;
+}
+.login footer a{
+    color: #fff;
+    text-decoration: underline;
+}
+.input-wrapper{
+    position: relative;
+    color: #312B23;
+    font-weight: bold;
+    font-family: "Font Awesome 5 Free";
+}
+
+.input-login::before{
+    content: "\f007";
+    position: absolute;
+    top: 1.5rem;
+    left: 0.6rem;
+}
+
+.input-senha::before{
+    content: "\f023";
+    position: absolute;
+    top: 1.5rem;
+    left: 0.6rem;
+}
+.input-email::before{
+    content: "\f023";
+    position: absolute;
+    top: 1.5rem;
+    left: 0.6rem;
+}
